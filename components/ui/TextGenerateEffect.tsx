@@ -10,7 +10,7 @@ export const TextGenerateEffect = ({words, className, filter = true, duration = 
     duration?: number;
 }) => {
     const [scope, animate] = useAnimate();
-    let wordsArray = words.split(" ");
+    const wordsArray = words.split(" ");
     useEffect(() => {
         animate(
             "span",
@@ -23,7 +23,7 @@ export const TextGenerateEffect = ({words, className, filter = true, duration = 
                 delay: stagger(0.2),
             }
         );
-    }, [scope.current]);
+    }, []);
 
     const renderWords = () => {
         return (

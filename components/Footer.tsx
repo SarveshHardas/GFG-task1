@@ -42,7 +42,7 @@ const Footer = () => {
                     <p>
                         PyHack provides a wide range of resources and hands-on experience to help you master
                         Python-based game development. Explore new techniques, share your creations, and collaborate
-                        with fellow developers. Whether you're looking to build indie games or start a career in the
+                        with fellow developers. Whether you&apos;re looking to build indie games or start a career in the
                         gaming industry, PyHack is the place to begin.
                     </p>
                 </div>
