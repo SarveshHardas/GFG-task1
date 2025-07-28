@@ -11,7 +11,12 @@ const Hero = () => {
 
     const paraRef = useRef<HTMLParagraphElement>(null);
     const divRef = useRef<HTMLDivElement>(null);
-    const imgWrapperRef = useRef<HTMLDivElement>(null);
+    const imgWrapperRef1 = useRef<HTMLDivElement>(null);
+    const imgWrapperRef2 = useRef<HTMLDivElement>(null);
+    const imgWrapperRef3 = useRef<HTMLDivElement>(null);
+    const imgWrapperRef4 = useRef<HTMLDivElement>(null);
+    const imgWrapperRef5 = useRef<HTMLDivElement>(null);
+    const imgWrapperRef6 = useRef<HTMLDivElement>(null);
     const btmImgWrapperRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLDivElement>(null);
 
@@ -20,35 +25,70 @@ const Hero = () => {
             gsap.fromTo(
                 paraRef.current,
                 {y:50, opacity:0},
-                {y:0, opacity:1, duration:2, ease:"easeInOut", delay:3}
+                {y:0, opacity:1, duration:2, ease:"easeInOut", delay:2}
             )
         }
         if(divRef.current){
             gsap.fromTo(
                 divRef.current,
-                {opacity:0},
-                {opacity:1, duration:1.2, ease:"easeInOut", delay:2}
+                {y:50,opacity:0},
+                {y:0,opacity:1, duration:1.2, ease:"easeInOut", delay:0}
             )
         }
-        if(imgWrapperRef.current){
+        if(imgWrapperRef1.current){
             gsap.fromTo(
-                imgWrapperRef.current,
-                {x:50, opacity:0},
-                {x:0, opacity:1, duration:1.2, ease:"easeInOut", delay:5}
+                imgWrapperRef1.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:5}
+            )
+        }
+        if(imgWrapperRef2.current){
+            gsap.fromTo(
+                imgWrapperRef2.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:5.25}
+            )
+        }
+        if(imgWrapperRef3.current){
+            gsap.fromTo(
+                imgWrapperRef3.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:5.5}
+            )
+        }
+        if(imgWrapperRef4.current){
+            gsap.fromTo(
+                imgWrapperRef4.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:5.75}
+            )
+        }
+        if(imgWrapperRef5.current){
+            gsap.fromTo(
+                imgWrapperRef5.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:6}
+            )
+        }
+        if(imgWrapperRef6.current){
+            gsap.fromTo(
+                imgWrapperRef6.current,
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:0.5, ease:"easeInOut", delay:6.25}
             )
         }
         if(btmImgWrapperRef.current){
             gsap.fromTo(
                 btmImgWrapperRef.current,
-                {x:50, opacity:0},
-                {x:0, opacity:1, duration:1.2, ease:"easeInOut", delay:5}
+                {y:50, opacity:0},
+                {y:0, opacity:1, duration:1.2, ease:"easeInOut", delay:4}
             )
         }
         if(buttonRef.current){
             gsap.fromTo(
                 buttonRef.current,
-                {opacity:0},
-                {opacity:1, duration:2, ease:"easeIn", delay:2}
+                {y:50,opacity:0},
+                {y:0,opacity:1, duration:2, ease:"easeIn", delay:3}
             )
         }
     }, []);
@@ -78,12 +118,16 @@ const Hero = () => {
                         otherClasses="xs:opacity-0 md:opacity-100"
                     />
                 </div>
-
-                <div ref={imgWrapperRef} className="relative -mt-6 flex justify-center items-center md:-top-20 sm:top-5 md:scale-100 sm:scale-50">
-                    <Image src="/heroimage.png" alt={"hero"} width={800} height={400}/>
+                <div className="flex justify-center items-end -top-20">
+                    <div ref={imgWrapperRef1}><img src="/t1.png" alt="t1" className="relative w-half h-fit scale-100" /></div>
+                    <div ref={imgWrapperRef2}><img src="/t2.png" alt="t2" className="relative w-fit h-fit scale-100" /></div>
+                    <div ref={imgWrapperRef3}><img src="/t3.png" alt="t3" className="relative w-fit h-fit scale-100" /></div>
+                    <div ref={imgWrapperRef4}><img src="/t4.png" alt="t4" className="relative w-fit h-fit scale-100" /></div>
+                    <div ref={imgWrapperRef5}><img src="/t5.png" alt="t5" className="relative w-fit h-fit scale-100" /></div>
+                    <div ref={imgWrapperRef6}><img src="/t6.png" alt="t6" className="relative w-fit h-fit scale-100" /></div>
                 </div>
-                <div ref={btmImgWrapperRef} className="relative -mt-20 flex justify-center items-center top-20 md:top-0">
-                    <Image src="/borderbottom.png" alt={"border bottom"} width={1500} height={50}/>
+                <div ref={btmImgWrapperRef} >
+                    <img src="/borderbottom.png" alt="border bottom" className="relative w-full h-fit" />
                 </div>
             </div>
         </section>

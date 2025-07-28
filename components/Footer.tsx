@@ -66,8 +66,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col justify-center items-center mt-1.5 gap-1">
                 <Image src="/ftborderbottom1.png" alt="border1" width={1048} height={6} className="w-full"/>
-                <Image src="/ftborderbottom2.png" alt="border2" width={1040} height={6} className="w-[90%]"/>
-                <Image src="/ftborderbottom3.png" alt="border3" width={940} height={6} className="w-80%"/>
+                <Image src="/ftborderbottom2.png" alt="border2" width={800} height={6} className="w-[90%]"/>
+                <Image src="/ftborderbottom3.png" alt="border3" width={600} height={6} className="w-80%"/>
             </div>
         </section>
     )
