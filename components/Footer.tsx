@@ -4,14 +4,14 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <section id="footer">
-            <div className="bg-[#fafafa] grid grid-cols-2 grid-rows-3 px-10 py-7 gap-2 rounded-2xl font-inter">
+            <div className="bg-[#fafafa] grid md:grid-cols-2 xs:grid-cols-1 xs:grid-rows-4 md:grid-rows-3 xs:px-5 xs:py-3 md:px-10 md:py-7 xs:space-y-3 md:space-y-0 md:gap-2 rounded-2xl font-inter">
                 <div className="row-span-1 flex justify-start items-start">
                     <div className="flex justify-start items-center gap-5">
                         <Image src="/gray-lg.png" alt="gray-logo" width={48} height={20}/>
                         <Image src="/ft-lg-text.png" alt="footer-text" width={200} height={20}/>
                     </div>
                 </div>
-                <div className="row-span-3 flex justify-around">
+                <div className="md:row-span-3 xs:row-span-1 flex justify-around">
                     <div className="space-y-5">
                         <p className="text-semibold text-black text-lg">Resources</p>
                         <ul className="text-[#8f8e8e] text-md">

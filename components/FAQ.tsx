@@ -7,8 +7,8 @@ const Faq = () => {
             <h1 className="text-4xl font-semibold">
                 FAQs
             </h1>
-            <div className="flex flex-col justify-end items-end gap-10">
-                <div className="bg-[#fafafa] px-[40px] py-[28px] rounded-xl min-w-[60%] hover:-translate-x-5 transition duration-200">
+            <div className="flex flex-col xs:justify-center xs:items-center mt-5 md:justify-end md:items-end gap-10">
+                <div className="bg-[#fafafa] px-[40px] py-[28px] rounded-xl md:min-w-[60%] hover:-translate-x-5 transition duration-200">
                     <div className="flex justify-between items-center text-black text-xl font-medium">
                         <p>What is PyHack?</p>
                         <Plus size={24} className="transform hover:rotate-90 transition duration-500"/>

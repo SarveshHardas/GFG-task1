@@ -63,11 +63,11 @@ const Hero = () => {
                     <Image src="/right_arrow.png" alt={"right_arrow"} width={20} height={20}/>
                 </div>
                 <TextGenerateEffect
-                    className="text-black text-6xl font-semibold mt-6 md:mt-8 lg:mt-12"
+                    className="text-black xs:text-4xl md:text-6xl font-semibold mt-6 md:mt-8 lg:mt-12"
                     words="Access the full power of Python Game Development."
                 />
 
-                <div className="text-[#636161] text-2xl font-medium mt-6 md:mt-10 lg:mt-15">
+                <div className="text-[#636161] xs:text-md md:text-2xl font-medium mt-6 md:mt-10 lg:mt-15">
                     <p ref={paraRef}>The ultimate game dev workshop for Python enthusiasts.<br/>Learn, create, and innovate with the most versatile pl.</p>
                 </div>
                 <div ref={buttonRef}>
@@ -75,13 +75,14 @@ const Hero = () => {
                         title="Get Started"
                         icon={<ArrowRight size={20}/>}
                         position="right"
+                        otherClasses="xs:opacity-0 md:opacity-100"
                     />
                 </div>
 
-                <div ref={imgWrapperRef} className="relative -mt-6 flex justify-center items-center -top-20">
+                <div ref={imgWrapperRef} className="relative -mt-6 flex justify-center items-center md:-top-20 sm:top-5 md:scale-100 sm:scale-50">
                     <Image src="/heroimage.png" alt={"hero"} width={800} height={400}/>
                 </div>
-                <div ref={btmImgWrapperRef} className="relative -mt-20 flex justify-center items-center">
+                <div ref={btmImgWrapperRef} className="relative -mt-20 flex justify-center items-center top-20 md:top-0">
                     <Image src="/borderbottom.png" alt={"border bottom"} width={1500} height={50}/>
                 </div>
             </div>
