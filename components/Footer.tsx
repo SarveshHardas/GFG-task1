@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -48,17 +49,25 @@ const Footer = () => {
                 </div>
                 <div className="row-span-1 flex flex-col justify-end items-start">
                     <div className="flex justify-end items-center gap-2">
-                        <Image src="/instagram.png" alt="Instagram" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
-                        <Image src="/twitter.png" alt="Twitter" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
-                        <Image src="/discord.png" alt="Discord" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
-                        <Image src="/Github.png" alt="Github" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
+                        <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <Image src="/instagram.png" alt="Instagram" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/sarvesh-hardas-5896a2323" target="_blank" rel="noopener noreferrer">
+                            <Image src="/twitter.png" alt="Twitter" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
+                        </Link>
+                        <Link href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                            <Image src="/discord.png" alt="Discord" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
+                        </Link>
+                        <Link href="https://github.com/SarveshHardas" target="_blank" rel="noopener noreferrer">
+                            <Image src="/Github.png" alt="Github" width={24} height={24} className="hover:-translate-y-2 transition duration-300"/>
+                        </Link>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center mt-1.5 gap-1">
                 <Image src="/ftborderbottom1.png" alt="border1" width={1048} height={6} className="w-full"/>
-                <Image src="/ftborderbottom2.png" alt="border2" width={1040} height={6}/>
-                <Image src="/ftborderbottom3.png" alt="border3" width={940} height={6}/>
+                <Image src="/ftborderbottom2.png" alt="border2" width={1040} height={6} className="w-[90%]"/>
+                <Image src="/ftborderbottom3.png" alt="border3" width={940} height={6} className="w-80%"/>
             </div>
         </section>
     )
